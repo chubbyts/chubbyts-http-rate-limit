@@ -1,5 +1,5 @@
-import type { Container } from '@chubbyts/chubbyts-dic-types/dist/container';
-import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dist/dic-config-factory';
+import type { Container } from '@chubbyts/chubbyts-dic-types/container';
+import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dic-config-factory';
 import type { ResponseHelpers, ServerRequestHelpers } from '@chubbyts/chubbyts-http-types/message-helper';
 import type { Middleware } from '@chubbyts/chubbyts-http-types/middleware';
 import { RateLimiterMemory } from 'rate-limiter-flexible';

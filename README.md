@@ -27,9 +27,9 @@ through the injected helpers, the responses get changed through the injected res
 ## Requirements
 
  * node: >=22
- * [@chubbyts/chubbyts-dic-config-factory][5]: ^1.0.1
- * [@chubbyts/chubbyts-dic-types][3]: ^2.3.1
- * [@chubbyts/chubbyts-http-error][9]: ^3.5.1
+ * [@chubbyts/chubbyts-dic-config-factory][5]: ^1.1.0
+ * [@chubbyts/chubbyts-dic-types][3]: ^2.4.0
+ * [@chubbyts/chubbyts-http-error][9]: ^3.6.0
  * [@chubbyts/chubbyts-http-types][2]: ^4.0.0
  * [rate-limiter-flexible][7]: ^11.2.3
 
@@ -38,7 +38,7 @@ through the injected helpers, the responses get changed through the injected res
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-rate-limit][1].
 
 ```ts
-npm i @chubbyts/chubbyts-http-rate-limit@^1.0.0
+npm i @chubbyts/chubbyts-http-rate-limit@^1.1.0
 ```
 
 ## Usage
@@ -139,7 +139,7 @@ json, logging, ...). The `detail` and `instance` contain the path and query of t
 ```ts
 import { createResponseFactory, createStreamFactory } from '@chubbyts/chubbyts-http/message-factory';
 import { createResponseHelpers } from '@chubbyts/chubbyts-http/message-helper';
-import { isHttpError } from '@chubbyts/chubbyts-http-error/dist/http-error';
+import { isHttpError } from '@chubbyts/chubbyts-http-error/http-error';
 import type { Middleware } from '@chubbyts/chubbyts-http-types/middleware';
 
 const responseFactory = createResponseFactory();
@@ -169,8 +169,8 @@ const errorMiddleware: Middleware = async (request, handler) => {
 The package ships service factories (abstract factories built on [chubbyts-dic-config-factory][5]) for a [chubbyts-dic-config][4] (or any [chubbyts-dic-types][3] compatible) container within `@chubbyts/chubbyts-http-rate-limit/service-factory`, configured through `config.chubbyts.rateLimit`. The implementation of the types gets read from the services `serverRequestHelpers` and `responseHelpers`, which have to be registered:
 
 ```ts
-import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import { createResponseHelpers, createServerRequestHelpers } from '@chubbyts/chubbyts-http/message-helper';
 import type { RateLimitConfig } from '@chubbyts/chubbyts-http-rate-limit/service-factory';
 import { rateLimitMiddlewareServiceFactory } from '@chubbyts/chubbyts-http-rate-limit/service-factory';

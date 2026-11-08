@@ -1,11 +1,11 @@
 import { describe, expect, test } from 'vitest';
-import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/dist/function-mock';
-import { useObjectMock } from '@chubbyts/chubbyts-function-mock/dist/object-mock';
+import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/function-mock';
+import { useObjectMock } from '@chubbyts/chubbyts-function-mock/object-mock';
 import { createResponseFactory, createServerRequestFactory } from '@chubbyts/chubbyts-http/message-factory';
 import { createResponseHelpers } from '@chubbyts/chubbyts-http/message-helper';
 import type { Handler } from '@chubbyts/chubbyts-http-types/handler';
 import type { Method } from '@chubbyts/chubbyts-http-types/message';
-import { HttpError } from '@chubbyts/chubbyts-http-error/dist/http-error';
+import { HttpError } from '@chubbyts/chubbyts-http-error/http-error';
 import { RateLimiterMemory, RateLimiterRes } from 'rate-limiter-flexible';
 import type { KeyResolver } from '../src/key-resolver.js';
 import type { RateLimiter } from '../src/middleware.js';

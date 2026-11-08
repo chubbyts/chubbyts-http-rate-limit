@@ -1,4 +1,4 @@
-import { createTooManyRequests } from '@chubbyts/chubbyts-http-error/dist/http-error';
+import { createTooManyRequests } from '@chubbyts/chubbyts-http-error/http-error';
 import type { Response, ServerRequest, Uri } from '@chubbyts/chubbyts-http-types/message';
 import type { ResponseHelpers } from '@chubbyts/chubbyts-http-types/message-helper';
 import type { Handler } from '@chubbyts/chubbyts-http-types/handler';
