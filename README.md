@@ -38,7 +38,7 @@ through the injected helpers, the responses get changed through the injected res
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-rate-limit][1].
 
 ```ts
-npm i @chubbyts/chubbyts-http-rate-limit@^1.1.0
+npm i @chubbyts/chubbyts-http-rate-limit@^1.1.1
 ```
 
 ## Usage
